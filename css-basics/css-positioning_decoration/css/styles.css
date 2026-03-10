@@ -45,6 +45,8 @@ Hint: The z-index can also be negative!
   rotate: -15deg;
   position: absolute;
   z-index: -20;
+  bottom: 0;
+  right: 100px;
 }
 
 .blob-2 {

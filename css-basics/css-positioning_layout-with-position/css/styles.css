@@ -24,6 +24,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px 30px;
   position: fixed;
+  width: 100%;
   top: 0;
   z-index: 20;
 }
@@ -48,6 +49,7 @@ body {
   background: #370182;
   position: fixed;
   bottom: 0;
+  width: 100%;
   z-index: 20;
 }
 
