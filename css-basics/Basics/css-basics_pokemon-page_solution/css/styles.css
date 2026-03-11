@@ -4,12 +4,14 @@
 
 /* Task 1: First, we want to adjust how the size of our elements is calculated in CSS. Do you know how to switch from "content-box" to "border-box"? */
 
-/* Your solution */
+* {
+  box-sizing: border-box;
+}
 
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements in your code via inheritance. Which selector do we need for this? */
 
 /* Add selector */
- {
+body {
   font-family: monospace;
   font-size: 1rem;
   line-height: 1.5;
@@ -18,9 +20,12 @@
 
 /* ------- Headings Part 1 ------- */
 
-/* Task 3: Setting the line height to 1.5 is good for texts, for accessibility reasons, but it seems too much for headings. Let's change this by giving our headings a line height of 1.2. */
+/* Task 3: To set the line height to 1.5 is good for texts, because of accessibility concerns, but for the headings it seems too much. Let's change this by giving our headings a line height of 1.2: */
 
-/* Your solution */
+h1,
+h2 {
+  line-height: 1.2;
+}
 
 /* Task 4: Now we want to give our h1 element more styles to shine! Add the following styles by writing the correct declarations inside the next CSS rule:
 
@@ -31,7 +36,10 @@
 */
 
 .title {
-  /* Your solution */
+  background-color: white;
+  margin-top: 0;
+  padding: 10px;
+  text-align: center;
 }
 
 /* ------- Sections ------- */
@@ -45,7 +53,14 @@
 */
 
 section {
-  /* Your solution */
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-left: 5px solid orange;
+}
+
+section.favourites {
+  border-left: 5px solid gold;
 }
 
 /* ------- Headings Part 2 ------- */
@@ -59,7 +74,14 @@ section {
 */
 
 .subtitle {
-  /* Your solution */
+  display: inline-block;
+  padding: 0 0.5rem 0;
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+}
+
+.favourites .subtitle {
+  border-color: orange;
 }
 
 /* ------- List ------- */
@@ -67,14 +89,13 @@ section {
 /* Task 7: Finally, let's style our list with of favorite Pokémon. Which selector do we need? Also, add values for padding. */
 
 /* Add selector */
- {
+ul {
   list-style: "🧡";
-  padding-left: /* Add value */ ;
+  padding-left: 1.5rem;
 }
 
-/* Add selector */
- {
-  padding-left: /* Add value */ ;
+ul li {
+  padding-left: 0.55rem;
 }
 
 /* ------- The End -------- */
